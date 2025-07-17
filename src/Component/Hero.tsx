@@ -95,11 +95,11 @@ function Hero(): React.ReactElement {
           <div xmlns="http://www.w3.org/1999/xhtml"
             className="flex flex-col items-center justify-center h-full text-white text-center"
           >
-            <h1 className="text-4xl font-bold">Commercial Egg Production</h1>
-            <p className="mt-2 text-lg">
+            <h1 className="text-5xl md:text-4xl font-bold">Commercial Egg Production</h1>
+            <p className="mt-2 text-3xl md:text-lg">
               We prioritize our customers’ challenges.
             </p>
-            <p className="text-base">
+            <p className="text-2xl md:text-base">
               Tailored business solutions to fit your needs.
             </p>
           </div>
@@ -152,7 +152,7 @@ function Hero(): React.ReactElement {
         <foreignObject x="0" y="100" width="100%" height="500">
           {/* @ts-ignore */}
           <div className="flex flex-col items-center justify-center max-w-4xl ml-10 h-full text-white text-center mt-20 z-30">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-tr from-green-700 via-green-900 to-black">
+            <h2 className="text-4xl lg:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-tr from-green-700 via-green-900 to-black">
               WELCOME TO AGATONE FARMS
             </h2>
             <p className="text-[#14532D] text-3xl md:text-lg">
