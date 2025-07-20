@@ -1,5 +1,10 @@
 import { useState } from "react";
 import { Star, ShoppingCart, Filter } from "lucide-react";
+import packageEggs from '../assets/Eggcrate1.jpg'
+import eggs from '../assets/egg1.jpg'
+import spent from '../assets/WhatsApp Image 2025-07-06 at 09.26.42_b46da89e.jpg'
+import liveBroiler from '../assets/Chicken1.jpg'
+import broilerMeat from '../assets/Chicken2.jpg'
 
 const Shop = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -14,9 +19,9 @@ const Shop = () => {
   };
 
   const categories = [
-    { id: "all", name: "All Products" },
+    { id: "all", name: "All Products"},
     { id: "table-eggs", name: "Table Eggs" },
-    { id: "feed", name: "Poultry Layer Feed" },
+    { id: "broiler", name: "Broilers" },
     { id: "crates", name: "Egg Crates" },
     { id: "chicken-manure", name: "Chicken Manure" },
     { id: "spent-layers", name: "Spent Layers" },
@@ -25,9 +30,9 @@ const Shop = () => {
   const products = [
     {
       id: 1,
-      name: "The Best Fresh Antibiotic-Free Table Eggs",
-      price: 6000,
-      image: "https://petrosfarms.com/wp-content/uploads/2022/05/IMG_3638.png",
+      name: "Naturally Fresh Table Eggs - Antibiotics-Free",
+      price: 5500,
+      image: eggs,
       category: "table-eggs",
       categoryName: "Table Eggs",
       rating: 5,
@@ -37,42 +42,31 @@ const Shop = () => {
     },
     {
       id: 2,
-      name: "Petros Farms Layer Mash: The Only Feed for Big Eggs",
-      price: 19000,
-      image: "https://petrosfarms.com/wp-content/uploads/2024/07/Layer.jpg",
-      category: "feed",
-      categoryName: "Poultry Layer Feed",
-      description:
-        "Premium layer mash formulated for maximum egg production and bird health.",
-      inStock: true,
-    },
-    {
-      id: 3,
-      name: "Petros Farms Pre-Layer Feed: The Best Nutrition for Pre-Laying Pullets",
-      price: 19000,
-      image: "https://petrosfarms.com/wp-content/uploads/2024/07/Pre-Layer.jpg",
-      category: "feed",
-      categoryName: "Poultry Layer Feed",
+      name: "Pasture-Raised Chickens",
+      price: 8000,
+      image: liveBroiler,
+      category: "broiler",
+      categoryName: "Live Broiler",
       description:
         "Specially formulated feed for pullets preparing to lay eggs.",
       inStock: true,
     },
     {
-      id: 4,
-      name: "Petros Farms Developer Feed: The Best Nutrition for Growing Pullets",
-      price: 19000,
-      image: "https://petrosfarms.com/wp-content/uploads/2024/07/Developer.jpg",
-      category: "feed",
-      categoryName: "Poultry Layer Feed",
+      id: 3,
+      name: "NatureRaised Broiler Meat",
+      price: 9000,
+      image: broilerMeat,
+      category: "broiler",
+      categoryName: "Broiler Meat",
       description:
         "High-quality feed designed for optimal growth and development of young pullets.",
       inStock: true,
     },
     {
-      id: 5,
-      name: "The Ultimate Egg Packaging Solution",
-      price: 2500,
-      image: "https://petrosfarms.com/wp-content/uploads/2023/11/443.jpg",
+      id: 4,
+      name: "Your All-in-One Egg Crating Solution",
+      price: 6500,
+      image: packageEggs,
       category: "crates",
       categoryName: "Egg Crates",
       description:
@@ -80,9 +74,9 @@ const Shop = () => {
       inStock: true,
     },
     {
-      id: 6,
-      name: "Preferred High Quality Organic Chicken Manure",
-      price: 400,
+      id: 5,
+      name: "25kg Top-Grade Organic Chicken Manure",
+      price: 1000,
       image: "https://petrosfarms.com/wp-content/uploads/2022/07/manure.jpg",
       category: "chicken-manure",
       categoryName: "Chicken Manure",
@@ -91,11 +85,10 @@ const Shop = () => {
       inStock: true,
     },
     {
-      id: 7,
-      name: "Savor The Strong Flavor Of Spent Layers",
-      price: 5000,
-      image:
-        "https://petrosfarms.com/wp-content/uploads/2022/05/Petros-bird.png",
+      id: 6,
+      name: "Farm-raised Birds with Gourmet-Grade Meat",
+      price: 6000,
+      image: spent,
       category: "spent-layers",
       categoryName: "Spent Layers",
       description:

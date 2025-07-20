@@ -1,5 +1,6 @@
 import { Users, Target, Heart, Award } from "lucide-react";
 import img from "../assets/pen3.jpg";
+import ceo from '../assets/RANL7336.jpg'
 
 const About = () => {
   const values = [
@@ -31,14 +32,13 @@ const About = () => {
 
   const team = [
     {
-      name: "Dr. Peter Maduka",
+      name: "Daniel Chibuike .N.", 
       role: "Founder & CEO",
-      image: "https://petrosfarms.com/wp-content/uploads/2022/05/gdg.jpeg",
+      image: ceo,
       description:
-        "Visionary leader with over 20 years of experience in agricultural development.",
-    },
+        "Visionary leader with over 2 years of experience in agricultural development.",    },
     {
-      name: "Cynthia Maduka",
+      name: "Okolo Ugonwa Blessing",
       role: "Operations Manager",
       image: "https://petrosfarms.com/wp-content/uploads/2022/05/gdg.jpeg",
       description:
@@ -253,7 +253,7 @@ const About = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-90 object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">

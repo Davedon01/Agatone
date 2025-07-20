@@ -1,5 +1,5 @@
 import React from "react";
-import BirdsVid from "../assets/svg-pen1.mp4";
+import BirdsVid from "../assets/WhatsApp Video 2025-07-18 at 00.13.48_4fe5c304.mp4";
 import processedBirds from "../assets/Chicken2.jpg";
 import egg from "../assets/Eggcrate1.jpg";
 import pen2 from "../assets/pen2.jpg";
@@ -46,7 +46,7 @@ function Hero(): React.ReactElement {
       {/* Background Video */}
       <video
         src={BirdsVid}
-        className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+        className="absolute top-0 left-0 w-full h-full object-cover sm:object-center z-[-1] blur-none sm:blur-none"
         autoPlay
         muted
         loop
@@ -155,7 +155,7 @@ function Hero(): React.ReactElement {
             <h2 className="text-4xl lg:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-tr from-green-700 via-green-900 to-black">
               WELCOME TO AGATONE FARMS
             </h2>
-            <p className="text-[#14532D] text-3xl md:text-lg">
+            <p className="text-[#14532D] text-2xl md:text-lg">
               Agatone Farm is a proudly Nigerian-owned poultry farm dedicated to
               delivering high-quality, healthy, and sustainably-raised poultry
               products. Located in the heart of nature, our farm combines
